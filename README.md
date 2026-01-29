@@ -1,13 +1,13 @@
-# DHFR Mutation Analysis Project
+# dhfr / dhps Mutation Analysis Project
 
 ## Project Overview
-This project analyzes DHFR (Dihydrofolate Reductase) resistance markers in malaria parasites, specifically examining three key mutations: Asn51Ile, Cys59Arg, and Ser108Asn.
+This project analyzes dhfr / dhps (Dihydrofolate Reductase) resistance markers in malaria parasites, specifically examining three key mutations: Asn51Ile, Cys59Arg, and Ser108Asn.
 
 ## Discussion Summary
 
 ### Initial Brainstorming Phase
 
-**Objective:** Create a script to analyze DHFR mutation data from `dhfr_prevalences_input_table_1.csv` and produce visualizations similar to `dhfr_no_het.png`.
+**Objective:** Create a script to analyze dhfr / dhps mutation data from `dhfr / dhps_prevalences_input_table_1.csv` and produce visualizations similar to `dhfr / dhps_no_het.png`.
 
 **Data Understanding:**
 - **Sample IDs** from different populations (MSY, PCD, PK3W, PK4W, PK5W, ND)
@@ -88,12 +88,12 @@ The analysis notebook includes the following sections:
 5. **Visualization: Haplotype Prevalence Bar Chart**
    - Create bar chart showing haplotype distribution
    - Include count and percentage labels
-   - Save as `RESULTS/dhfr_no_het.png`
+   - Save as `RESULTS/dhfr / dhps_no_het.png`
 
 6. **Additional Visualization: Individual Mutation Prevalence**
    - Bar chart for each individual mutation
    - Color-coded bars
-   - Save as `RESULTS/dhfr_individual_mutations.png`
+   - Save as `RESULTS/dhfr / dhps_individual_mutations.png`
 
 7. **Summary Statistics**
    - Print comprehensive summary of analysis
@@ -108,7 +108,7 @@ The analysis notebook includes the following sections:
      - Left: Red hatched bars showing wild type counts per mutation
      - Middle: Mutation labels with prevalence percentages
      - Right: Dot plot matrix showing mutation patterns
-   - Save as `RESULTS/dhfr_no_het_combined.png`
+   - Save as `RESULTS/dhfr / dhps_no_het_combined.png`
 
 ## Project Structure
 
@@ -119,17 +119,17 @@ JULIEN_YANOGO/
 ├── requirements.txt                     # Python dependencies
 ├── DATA/
 │   ├── csv/
-│   │   └── dhfr_prevalences_input_table_1.csv  # Input data
+│   │   └── dhfr / dhps_prevalences_input_table_1.csv  # Input data
 │   └── images/                          # Reference images
 └── RESULTS/                             # Output visualizations
-    ├── dhfr_no_het.png                  # Haplotype bar chart
-    ├── dhfr_individual_mutations.png    # Individual mutation chart
-    └── dhfr_no_het_combined.png         # Combined visualization
+    ├── dhfr / dhps_no_het.png                  # Haplotype bar chart
+    ├── dhfr / dhps_individual_mutations.png    # Individual mutation chart
+    └── dhfr / dhps_no_het_combined.png         # Combined visualization
 ```
 
 ## Data Description
 
-**Input file:** `DATA/csv/dhfr_prevalences_input_table_1.csv`
+**Input file:** `DATA/csv/dhfr / dhps_prevalences_input_table_1.csv`
 
 **Columns:**
 - `Sample ID`: Unique identifier for each sample
@@ -168,8 +168,8 @@ JULIEN_YANOGO/
 
 1. **Create a new conda environment (recommended):**
    ```bash
-   conda create -n dhfr_analysis python=3.11
-   conda activate dhfr_analysis
+   conda create -n dhfr / dhps_analysis python=3.11
+   conda activate dhfr / dhps_analysis
    ```
 
 2. **Install packages using conda:**
@@ -217,16 +217,16 @@ JULIEN_YANOGO/
 ## Key Findings
 
 The analysis reveals:
-- **Individual mutation prevalence** for each of the three DHFR mutations
+- **Individual mutation prevalence** for each of the three dhfr / dhps mutations
 - **Haplotype distribution** showing the most common mutation combinations
 - **Triple mutant (1-1-1)** typically represents the highest prevalence
 - **Wild type (0-0-0)** and various double mutant combinations at lower frequencies
 
 ## Visualization Outputs
 
-1. **dhfr_no_het.png**: Simple bar chart showing haplotype prevalence
-2. **dhfr_individual_mutations.png**: Bar chart showing individual mutation rates
-3. **dhfr_no_het_combined.png**: Comprehensive visualization combining:
+1. **dhfr / dhps_no_het.png**: Simple bar chart showing haplotype prevalence
+2. **dhfr / dhps_individual_mutations.png**: Bar chart showing individual mutation rates
+3. **dhfr / dhps_no_het_combined.png**: Comprehensive visualization combining:
    - Haplotype count distribution
    - Wild type vs mutant counts per mutation
    - Dot matrix showing mutation patterns
