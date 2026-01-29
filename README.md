@@ -239,10 +239,6 @@ The analysis reveals:
 - Visualizations use color coding to distinguish mutation patterns
 - All plots are saved at 300 DPI for publication quality
 
-## Author
-
-Analysis developed for Julien Yanogo's research project on antimalarial resistance markers.
-
 ## Date
 
 January 28-29, 2026
